@@ -2,6 +2,8 @@
 
 A declarative format for self-healing runbooks — fault signature → diagnostics → remediation → verification, with rollback as an optional tail — plus a strict validator and a dry-run planner that proves execution order without running anything. Pure standard library, zero side effects.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 Self-healing scripts rot into "bash mythology": a cron job someone wrote in 2021, an ordering assumption nobody documented, a fix with no verification step that silently stops fixing. When the pager fires you want a *validated artifact* that says exactly what fires it, what gets checked, what gets fixed, how the fix is verified, and how to undo it — and you want a machine to confirm the artifact is well-formed before an incident, not during one.

@@ -1,3 +1,13 @@
+
+> [!NOTE]
+> **This tool is now part of [zhengming-toolbox](https://github.com/chenhz01/zhengming-toolbox)** &mdash; one install, one CLI for all offline checks:
+>
+> ```bash
+> pip install git+https://github.com/chenhz01/zhengming-toolbox.git
+> zmt list        # see every tool
+> ```
+>
+> This repository is kept as provenance; the code below is unchanged. <!-- zhengming-toolbox-consolidation-notice -->
 # self-heal-runbook
 
 A declarative format for self-healing runbooks — fault signature → diagnostics → remediation → verification, with rollback as an optional tail — plus a strict validator and a dry-run planner that proves execution order without running anything. Pure standard library, zero side effects.
